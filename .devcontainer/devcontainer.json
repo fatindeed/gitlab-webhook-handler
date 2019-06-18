@@ -1,0 +1,18 @@
+// See https://aka.ms/vscode-remote/containers for the
+// documentation about the devcontainer.json format
+{
+    "name": "gitlab-webhook-handler",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "vscode-remote",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "felixfbecker.php-intellisense",
+        "felixfbecker.php-debug"
+    ],
+    "shutdownAction": "stopCompose",
+    "postCreateCommand": [
+        "vscode-remote-init"
+    ]
+}
